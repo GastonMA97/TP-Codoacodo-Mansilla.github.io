@@ -1,0 +1,116 @@
+@layer navbar,
+banner,
+footer;
+
+
+@layer navbar {
+
+    nav div .navbar-nav a {
+        color: gray;
+    }
+
+    nav div .navbar-nav a:hover {
+        color: rgb(155, 193, 220)
+    }
+
+    nav div .navbar-nav .active {
+        color: rgb(18, 128, 27) !important
+    }
+    
+    nav div .navbar-nav .active:hover {
+        color: rgb(43, 179, 99) !important
+    }
+}
+
+/* Banner */
+@layer banner {
+
+    .banner__container--size {
+        height: 60vh;
+    }
+
+    .banner__img--shadow {
+        filter: drop-shadow(2px 4px 6px black);
+        -webkit-filter: drop-shadow(2px 4px 6px black);
+    }
+
+    #banner>div>img {
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .card-img {
+        filter: brightness(50%);
+    }
+
+    .card-img-overlay {
+        text-align: right;
+        padding-right: 175px;
+        margin-top: 250px;
+        margin-left: 550px;
+        font-size: 130%;
+        font-weight: 400;
+        padding-left: 950px;
+        width: 750px;
+    }
+}
+
+/* Cards */
+
+
+.mb-0 {
+    font-size: 75%;
+}
+
+/* Lugar y Fecha*/
+
+.lugar-fecha {
+    display: flex;
+    margin-top: 100px;
+    background-color: gray;
+    color: #fff;
+}
+.honolulu {
+    width: 700px;
+}
+.text-lugar {
+    padding: 25px;
+}
+
+/* Formulario*/
+
+
+@layer footer {
+    footer {
+        font-size: 0.9rem;
+        background: linear-gradient(180deg, rgb(8, 58, 59) 0%, rgb(14, 50, 128) 100%);
+    }
+
+    footer a {
+        text-decoration: none !important;
+        color: white !important;
+        transition: .5s all;
+        -webkit-transition: .5s all;
+        -moz-transition: .5s all;
+        -ms-transition: .5s all;
+        -o-transition: .5s all;
+    }
+
+    footer a:hover {
+        color: rgb(181, 252, 248) !important;
+        transform: scale(1.1);
+        transition: .5s all;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -webkit-transition: .5s all;
+        -moz-transition: .5s all;
+        -ms-transition: .5s all;
+        -o-transition: .5s all;
+    }
+
+    footer div {
+        color: white
+    }
+}
